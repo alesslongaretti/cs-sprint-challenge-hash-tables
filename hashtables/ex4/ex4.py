@@ -1,8 +1,14 @@
 def has_negatives(a):
-    """
-    YOUR CODE HERE
-    """
-    # Your code here
+    # hash table
+    pairs = {}
+    # result array
+    result = []
+
+    for num in a:
+        if -num in pairs:
+            result.append(abs(num))
+        else:
+             pairs[num] = "value"
 
     return result
 
